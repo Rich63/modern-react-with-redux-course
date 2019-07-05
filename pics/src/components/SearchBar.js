@@ -6,11 +6,7 @@ class SearchBar extends React.Component {
 
   onFormSubmit = (e) => {
     e.preventDefault();
-    // onSubmit props is passed from App.js
-    /* When the form is submitted, the onFormSubmit class method is
-        called which invokes, or calls our callback - 
-        this.props.onSubmit with this.state.term as an argument. */
-    this.props.onSubmit(this.state.term); 
+      this.props.onSubmit(this.state.term); 
   };
 
   render() {
