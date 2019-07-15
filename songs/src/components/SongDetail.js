@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from "react-redux";
 
+// This is a functional component not a class based component, so there is no 'this'
 const SongDetail = ({ mySelectedSong }) => {
   if (!mySelectedSong) {
     return <div>Select a song please!</div>
